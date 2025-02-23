@@ -41,6 +41,12 @@
             "varsIgnorePattern": "^_",
             "ignoreRestSiblings": true
           }
+        ],
+        "@angular-eslint/template/elements-content": [
+          "error",
+          {
+            "allowList": ["appTooltipLabel", "ariaLabel"]
+          }
         ]
       }
     },
