@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TuiIcon, TuiButton } from '@taiga-ui/core';
+import { TuiButton } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [TuiIcon, CommonModule, TuiButton],
+  imports: [CommonModule, TuiButton],
   template: `
     <div
       class="fixed flex h-full  flex-col  bg-[#188083] justify-between px-4 text-white shadow-xl shadow-blue-gray-900/5">
