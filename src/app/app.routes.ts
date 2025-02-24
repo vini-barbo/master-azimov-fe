@@ -15,12 +15,6 @@ export const routes: Routes = [
   {
     path: 'review',
     component: SaasLayoutComponent,
-    children: [
-      { path: '', component: ReviewComponent },
-      { path: ':id', component: ReviewComponent },
-      { path: 'identification/:id', component: IdentificationComponent },
-      { path: 'search/:id', component: SearchComponent },
-      { path: 'result/:id', component: ResultComponent },
-    ],
+    children: [{ path: ':id', component: ReviewComponent }],
   },
 ];
