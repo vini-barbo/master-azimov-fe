@@ -18,13 +18,10 @@ import { TuiNavigation } from '@taiga-ui/layout';
   template: `
     <header
       tuiNavigationHeader
-      class="!bg-white !py-8 !x-7  !text-black !flex !justify-between">
+      class="!bg-white !py-8 !px-7  !text-black !flex !justify-between">
       <div class="flex gap-10 items-center lg:w-[50%]">
         <div class="flex gap-3 items-center">
-          <tui-avatar
-            src="https://avatars.githubusercontent.com/u/11832552"
-            [className]="'rounded-2xl'" />
-          teste buceta
+          <div class="logo h-24 w-24"></div>
         </div>
 
         <search tuiSearch [className]="'w-full'">
@@ -44,7 +41,7 @@ import { TuiNavigation } from '@taiga-ui/layout';
 
       <div class="!flex items-start gap-4 font-bold text-lg">
         <tui-avatar [src]="'@tui.user'" class="!text-black" [round]="false" />
-        Alex Inkin
+        Vinicius Barbosa
         <div>></div>
       </div>
     </header>
@@ -64,6 +61,12 @@ import { TuiNavigation } from '@taiga-ui/layout';
         &::before {
           display: none;
         }
+      }
+
+      .logo {
+        background-image: url('./assets/images/logo.svg');
+        background-size: contain;
+        background-position: -10%;
       }
     `,
   ],

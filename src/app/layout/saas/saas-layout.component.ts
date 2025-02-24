@@ -14,7 +14,9 @@ import { GuideComponent } from './guide/guide.component';
         <app-sidebar class="h-full"></app-sidebar>
         <div class=" flex flex-col w-full px-3">
           <app-guide></app-guide>
-          <router-outlet></router-outlet>
+          <div class="flex-1 py-2">
+            <router-outlet></router-outlet>
+          </div>
         </div>
       </div>
     </main>
