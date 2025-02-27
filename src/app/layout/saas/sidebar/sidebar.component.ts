@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TuiButton } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [CommonModule, TuiButton],
+  imports: [CommonModule, TuiButton, RouterLink],
   template: `
     <div
       class=" flex h-full  flex-col  bg-[#188083] justify-between px-4 text-white shadow-xl shadow-blue-gray-900/5">
@@ -15,6 +16,7 @@ import { TuiButton } from '@taiga-ui/core';
           tuiButton
           *ngFor="let item of topIcons"
           [iconStart]="item.icon"
+          [routerLink]="[item.path]"
           class="!bg-transparent hover:!bg-white hover:!text-[#188083]  active:!bg-white active:!text-[#188083]">
         </a>
       </div>
@@ -27,6 +29,7 @@ import { TuiButton } from '@taiga-ui/core';
             tuiButton
             *ngFor="let item of bottonIcons"
             [iconStart]="item.icon"
+            [routerLink]="[item.path]"
             class="!bg-transparent hover:!bg-white hover:!text-[#188083]  active:!bg-white active:!text-[#188083]">
           </a>
         </div>
@@ -37,7 +40,7 @@ import { TuiButton } from '@taiga-ui/core';
 })
 export class SidebarComponent {
   topIcons = [
-    { path: '/reviews', icon: '@tui.archive', title: 'Reviews' },
+    { path: '/review', icon: '@tui.archive', title: 'Reviews' },
     { path: '/teams', icon: '@tui.users', title: 'Teams' },
   ];
   bottonIcons = [
