@@ -31,8 +31,8 @@ import { ResultComponent } from './result/result.component';
           </button>
         </tui-tabs>
 
-        <app-identification *ngIf="activeItemIndex == 0"></app-identification>
-        <app-search *ngIf="activeItemIndex == 1"></app-search>
+        <app-identification *ngIf="activeItemIndex == 1"></app-identification>
+        <app-search *ngIf="activeItemIndex == 0"></app-search>
         <app-result *ngIf="activeItemIndex == 2"></app-result>
       </div>
       <ng-template #elseBlock>

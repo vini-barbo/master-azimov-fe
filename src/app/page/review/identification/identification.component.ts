@@ -5,7 +5,7 @@ import { TuiCardLarge, TuiForm } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-identification',
-  imports: [TuiCardLarge, TuiAppearance, TuiForm, TuiTextfield, CommonModule],
+  imports: [TuiAppearance, TuiForm, TuiTextfield, CommonModule],
   template: ` <form class="w-full h-full !grid !grid-cols-2" tuiForm="m">
     <aside class="flex flex-col gap-2">
       <tui-textfield>
