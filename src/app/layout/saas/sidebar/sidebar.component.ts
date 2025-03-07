@@ -21,7 +21,7 @@ import { TuiButton } from '@taiga-ui/core';
         </a>
       </div>
       <div>
-        <hr class="my-2 border-blue-gray-50" />
+        <hr class="i-hr" />
         <div class="flex flex-col gap-5">
           <a
             ariaLabel

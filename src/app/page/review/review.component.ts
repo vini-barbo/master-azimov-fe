@@ -19,7 +19,7 @@ import { ResultComponent } from './result/result.component';
   ],
   template: `
     <main class="i-main-card">
-      <div *ngIf="reviewId; else elseBlock">
+      <div *ngIf="reviewId; else elseBlock" class="flex flex-col gap-2">
         <tui-tabs [(activeItemIndex)]="activeItemIndex">
           <button
             *ngFor="let option of options"
@@ -31,9 +31,9 @@ import { ResultComponent } from './result/result.component';
           </button>
         </tui-tabs>
 
-        <app-identification *ngIf="activeItemIndex == 1"></app-identification>
-        <app-search *ngIf="activeItemIndex == 0"></app-search>
-        <app-result *ngIf="activeItemIndex == 2"></app-result>
+        <app-identification *ngIf="activeItemIndex == 3"></app-identification>
+        <app-search *ngIf="activeItemIndex == 1"></app-search>
+        <app-result *ngIf="activeItemIndex == 0"></app-result>
       </div>
       <ng-template #elseBlock>
         <p>Loading review...</p>

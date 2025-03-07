@@ -35,7 +35,7 @@ import { RouterLink } from '@angular/router';
           </form>
         </search>
 
-        <button tuiButton size="m" iconEnd="@tui.plus" class="!bg-[#188083]">
+        <button tuiButton size="m" iconEnd="@tui.plus" class="i-color-primary">
           Create new revision
         </button>
       </div>
@@ -44,7 +44,7 @@ import { RouterLink } from '@angular/router';
         <div
           tuiHeader
           *ngFor="let item of [].constructor(4)"
-          class="flex flex-col gap-3 s bg-[#DCE6F4] rounded-2xl px-4 py-2 hover:scale-105">
+          class="flex flex-col gap-3 s bg-[#DCE6F4] rounded-2xl px-4 py-2 hover:scale-105 duration-700">
           <div tuiTitle>Name</div>
 
           <div class="flex w-full justify-between items-center gap-2">
@@ -72,7 +72,7 @@ import { RouterLink } from '@angular/router';
             <a
               tuiButton
               size="m"
-              class="!bg-[#188083]"
+              class="i-color-primary"
               [routerLink]="['/review/', 1]"
               >Open</a
             >
