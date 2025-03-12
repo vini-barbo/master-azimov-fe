@@ -12,12 +12,17 @@ import { GuideComponent } from './guide/guide.component';
       <app-navbar></app-navbar>
       <div class="flex flex-row h-full w-full">
         <app-sidebar class="h-full"></app-sidebar>
-        <div class=" flex flex-col w-full px-3">
+        <div
+          class="flex flex-col gap-2 w-full h-full max-w-full border-2 border-red-500 px-2">
+          <app-guide></app-guide>
+          <router-outlet class="w-full max-w-full"></router-outlet>
+        </div>
+        <!-- <div class="  w-full max-w-full px-3">
           <app-guide></app-guide>
           <div class="flex-1 py-2">
             <router-outlet></router-outlet>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
   `,
